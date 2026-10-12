@@ -12,4 +12,4 @@
 
 脚本自动匹配 VS Code 版本与 commit，校验发布包 SHA256，备份原 Server CLI，安装补丁，并在远端 localhost 启动一次 Server 验证。出现 `LOCAL_VERIFIED` 后，再用 VS Code Remote-SSH 连接确认编辑器窗口。无 SSH 密钥时可能多次提示输入密码，脚本不会保存密码。
 
-更新 VS Code 后可重新运行。其他参数见 `Get-Help .\Repair-VSCodeCentOS7.ps1 -Full` 或脚本顶部。旧系统兼容补丁不保证所有远端扩展的原生模块均可运行。
+更新 VS Code 后可重新运行；若 `code` 不在 PATH，可用 `-CodePath` 指定路径。旧系统兼容补丁不保证所有远端扩展的原生模块均可运行。
